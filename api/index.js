@@ -14,7 +14,7 @@ const corsOptions ={
    optionSuccessStatus:200,
 }
 
-mongoose.connect(process.env.MONGO)
+mongoose.connect('mongodb+srv://user:user@ass.c57eepf.mongodb.net/?retryWrites=true&w=majority')
 .then(()=>{
     console.log("connected to mongodb")
 }).catch((err)=>{
