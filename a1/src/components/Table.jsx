@@ -6,7 +6,7 @@ const Table = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-      axios.get('http://localhost:3000/api/auth/get')
+      axios.get('https://assignment-api-five.vercel.app//api/auth/get')
       .then(users => setUsers(users.data))
       .catch(err => console.log(err))
     },[])
