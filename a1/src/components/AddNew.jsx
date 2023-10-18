@@ -51,7 +51,7 @@ const AddNew = () => {
     e.preventDefault(); //prevents refresher/rerender of page on submit
     try {
       const a = excludeDates.map((d) => d.newValue.format("MM/DD/YYYY"));
-      const res = await fetch("http://localhost:3000/api/auth", {
+      const res = await fetch("https://assignment-api-five.vercel.app/api/auth", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
