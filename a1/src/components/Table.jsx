@@ -34,7 +34,7 @@ const Table = () => {
             <tbody >
               {users.slice(0).reverse().map((user) => {
                 return (
-                  <tr className={(i%2==0) ? 'bg-slate-200' : 'bg-yellow-100'} key={user._id}>
+                  <tr className={(i%2==0) ? 'bg-slate-200 table_row' : 'bg-yellow-100 table_row'} key={user._id}>
                     <td className="table_content" cite="Action : "></td>
                     <td className="table_content" cite="ID : ">
                       {i--}
